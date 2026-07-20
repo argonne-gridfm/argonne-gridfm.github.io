@@ -1,1 +1,520 @@
-Hello from our Argonne-GridFM Team.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GridAI — AI Foundation Models &amp; Agents for the Power Grid</title>
+  <meta name="description" content="GridAI is an Argonne National Laboratory research project building AI foundation models (LUMINA) and agentic workflows (GridMind) for power grid optimization, analysis, and operations." />
+  <meta name="author" content="Argonne National Laboratory — GridAI" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="GridAI — AI for the Power Grid" />
+  <meta property="og:description" content="LUMINA foundation models and GridMind agentic workflows for power grid optimization and risk assessment." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230B2340'/%3E%3Ccircle cx='16' cy='16' r='7' fill='none' stroke='%2329ABE2' stroke-width='2.5'/%3E%3Ccircle cx='16' cy='16' r='2.5' fill='%237AC943'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- ===== Nav ===== -->
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a href="#home" class="brand"><span class="dot"></span> GridAI</a>
+      <div class="nav-links">
+        <a href="#overview">Overview</a>
+        <a href="#lumina">LUMINA</a>
+        <a href="#gridmind">GridMind</a>
+        <a href="#publications">Publications</a>
+        <a href="#timeline">Timeline</a>
+        <a href="#resources">Resources</a>
+        <a href="#team">Team</a>
+        <a href="https://github.com/argonne-gridfm/" target="_blank" rel="noopener" class="nav-cta">GitHub</a>
+      </div>
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
+          <line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/>
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== Hero ===== -->
+  <header class="hero" id="home">
+    <canvas id="hero-canvas"></canvas>
+    <div class="container hero-content">
+      <h1>GridAI</h1>
+      <p class="tagline">AI Foundation Models &amp; Agents for the Power Grid</p>
+      <p class="sub">
+        A research initiative advancing machine learning for power system optimization, analysis, and
+        operations — from graph-based foundation models to LLM-orchestrated agentic workflows.
+      </p>
+      <div class="hero-funding">
+        <span><span class="pip"></span> Argonne National Laboratory</span>
+        <span><span class="pip"></span> LDRD Funding</span>
+        <span><span class="pip"></span> ModCon Genesis Mission</span>
+      </div>
+      <div class="hero-cta">
+        <a href="#lumina" class="btn btn-primary">Explore LUMINA</a>
+        <a href="#gridmind" class="btn btn-ghost">Meet GridMind</a>
+        <a href="#publications" class="btn btn-ghost">Publications</a>
+      </div>
+    </div>
+    <div class="scroll-ind">Scroll ↓</div>
+  </header>
+
+  <!-- ===== Overview ===== -->
+  <section class="section" id="overview">
+    <div class="container">
+      <div class="reveal">
+        <div class="eyebrow">The Project</div>
+        <h2 class="section-title">Intelligent AI for a Resilient Power Grid</h2>
+        <p class="section-lead">
+          GridAI brings modern machine learning to the hardest problems in power system operations.
+          The project is organized around two complementary product lines: <strong>LUMINA</strong>, a
+          family of graph-based foundation models, and <strong>GridMind</strong>, an agentic framework
+          that reasons about grid risk and operations.
+        </p>
+      </div>
+
+      <div class="grid-2" style="margin-top:44px;">
+        <div class="card reveal">
+          <div class="card-icon icon-lumina">◈</div>
+          <div class="kicker">Foundation Model</div>
+          <h3>LUMINA</h3>
+          <p>
+            <em>Large-scale Unified Model for Intelligent Grid Applications.</em> A graph neural network
+            foundation model for power grid applications — multi-task, multi-dataset, and transferable
+            across grid topologies. AC Optimal Power Flow (ACOPF) is the current primary focus.
+          </p>
+          <div class="card-links">
+            <span class="tag">Graph Neural Networks</span>
+            <span class="tag">ACOPF</span>
+            <span class="tag">Topology Transfer</span>
+          </div>
+          <div style="margin-top:18px;"><a href="#lumina" class="pkg-arrow">Learn more →</a></div>
+        </div>
+
+        <div class="card reveal">
+          <div class="card-icon icon-gridmind">◆</div>
+          <div class="kicker">Agentic Framework</div>
+          <h3>GridMind</h3>
+          <p>
+            An LLM-orchestrated, LangGraph-based agentic framework for intelligent grid applications.
+            Multi-agent workflows tackle weather-driven risk assessment, power system analysis, and
+            operational decision support through an interactive interface.
+          </p>
+          <div class="card-links">
+            <span class="tag green">LangGraph</span>
+            <span class="tag green">Multi-Agent</span>
+            <span class="tag green">Risk Assessment</span>
+          </div>
+          <div style="margin-top:18px;"><a href="#gridmind" class="pkg-arrow">Learn more →</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== LUMINA ===== -->
+  <section class="section section-light" id="lumina">
+    <div class="container">
+      <div class="split">
+        <div class="split-text reveal">
+          <div class="eyebrow">LUMINA</div>
+          <h2 class="section-title">A Grid Foundation Model that Transfers</h2>
+          <p class="section-lead" style="margin-bottom:0;">
+            LUMINA is a <strong>multi-task, multi-dataset foundation model</strong> for power grid
+            applications. Its defining strength is <span class="hl">generalization</span>: a single
+            graph-based model that <span class="hl">transfers across grid topologies, scales, and tasks</span> —
+            moving beyond one-model-per-grid. AC Optimal Power Flow (ACOPF) is our current primary focus,
+            with the framework designed to extend to a broader family of grid optimization and analysis tasks.
+          </p>
+          <ul class="feature-list">
+            <li><strong>Topology-transferable</strong> — generalizes to unseen power networks without retraining</li>
+            <li><strong>Multi-task &amp; multi-dataset</strong> — one backbone across tasks and grid scales (14 → 13,659 bus)</li>
+            <li>Heterogeneous graph transformer over power-network structure</li>
+            <li>Physics-informed objectives for constraint feasibility</li>
+            <li>ACOPF today, extensible to the broader grid optimization &amp; analysis family</li>
+            <li>LUMINA-Bench — open benchmark for ACOPF surrogate learning</li>
+          </ul>
+          <div class="pill-row">
+            <a class="btn btn-hf" href="https://huggingface.co/argonne/LUMINA-2M" target="_blank" rel="noopener">
+              <span class="hf-emoji">🤗</span> Try LUMINA-2M on Hugging Face
+            </a>
+          </div>
+          <div class="pill-row" style="margin-top:12px;">
+            <a class="pub-link" href="https://argonne-gridfm.github.io/lumina-sdk/" target="_blank" rel="noopener">lumina-sdk docs</a>
+            <a class="pub-link" href="https://github.com/argonne-gridfm/lumina-inference" target="_blank" rel="noopener">lumina-inference</a>
+          </div>
+        </div>
+        <div class="split-media reveal">
+          <div class="media-panel">
+            <div class="mp-title">Model schematic · HGT backbone</div>
+            <!-- Placeholder schematic (swap for real architecture figure) -->
+            <svg class="schematic" viewBox="0 0 420 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="LUMINA heterogeneous graph model schematic">
+              <defs>
+                <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#29ABE2"/><stop offset="1" stop-color="#7AC943"/>
+                </linearGradient>
+              </defs>
+              <!-- input graph -->
+              <text x="12" y="20" fill="#8fb8d8" font-size="11" font-family="Inter">Power grid graph</text>
+              <g stroke="#3f6f9e" stroke-width="1.4">
+                <line x1="45" y1="70" x2="95" y2="45"/><line x1="45" y1="70" x2="90" y2="110"/>
+                <line x1="95" y1="45" x2="120" y2="95"/><line x1="90" y1="110" x2="120" y2="95"/>
+                <line x1="90" y1="110" x2="60" y2="150"/>
+              </g>
+              <g fill="#29ABE2">
+                <circle cx="45" cy="70" r="7"/><circle cx="95" cy="45" r="7"/>
+                <circle cx="120" cy="95" r="7"/><circle cx="90" cy="110" r="7"/>
+                <circle cx="60" cy="150" r="7" fill="#7AC943"/>
+              </g>
+              <!-- arrow -->
+              <line x1="150" y1="100" x2="200" y2="100" stroke="#8fb8d8" stroke-width="1.6" marker-end="url(#a)"/>
+              <defs><marker id="a" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+                <path d="M0,0 L6,3 L0,6 Z" fill="#8fb8d8"/></marker></defs>
+              <!-- transformer stack -->
+              <text x="210" y="42" fill="#8fb8d8" font-size="11" font-family="Inter">HGT layers</text>
+              <rect x="210" y="52" width="120" height="26" rx="6" fill="url(#g1)" opacity="0.9"/>
+              <rect x="210" y="86" width="120" height="26" rx="6" fill="url(#g1)" opacity="0.7"/>
+              <rect x="210" y="120" width="120" height="26" rx="6" fill="url(#g1)" opacity="0.55"/>
+              <text x="270" y="70" fill="#06263f" font-size="10" font-family="Inter" text-anchor="middle" font-weight="700">Attention</text>
+              <text x="270" y="104" fill="#06263f" font-size="10" font-family="Inter" text-anchor="middle" font-weight="700">Message pass</text>
+              <text x="270" y="138" fill="#06263f" font-size="10" font-family="Inter" text-anchor="middle" font-weight="700">Task heads</text>
+              <!-- outputs -->
+              <line x1="335" y1="130" x2="370" y2="180" stroke="#8fb8d8" stroke-width="1.4"/>
+              <text x="250" y="200" fill="#8fb8d8" font-size="11" font-family="Inter">Outputs</text>
+              <rect x="250" y="210" width="150" height="24" rx="6" fill="#123b6b" stroke="#29ABE2"/>
+              <text x="325" y="226" fill="#cfe8fa" font-size="10" font-family="Inter" text-anchor="middle">V, θ, P, Q · feasibility</text>
+              <text x="20" y="260" fill="#5f83a5" font-size="10" font-family="Inter">Placeholder — replace with LUMINA architecture figure</text>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GridMind ===== -->
+  <section class="section" id="gridmind">
+    <div class="container">
+      <div class="split rev">
+        <div class="split-media reveal">
+          <a href="https://anl.box.com/s/3ejd4w0dqnvwu8j2euqb36el9rw8gjbl" target="_blank" rel="noopener" style="text-decoration:none;">
+            <div class="video-thumb">
+              <div class="play-btn" aria-hidden="true"></div>
+              <span class="video-caption">▶ Watch the GridMind demo</span>
+            </div>
+          </a>
+          <p style="text-align:center;color:var(--muted);font-size:0.88rem;margin-top:12px;">
+            Demo video hosted on Box · opens in a new tab
+          </p>
+        </div>
+        <div class="split-text reveal">
+          <div class="eyebrow">GridMind</div>
+          <h2 class="section-title">Agentic Workflows for Grid Operations</h2>
+          <p class="section-lead" style="margin-bottom:0;">
+            GridMind is an LLM-powered, LangGraph-based agentic framework. An orchestrator routes tasks
+            to specialized agents that perform power system analysis, contingency and cascading-failure
+            reasoning, and weather-driven risk assessment — calling neural solvers like LUMINA when needed.
+          </p>
+          <ul class="feature-list">
+            <li>LLM orchestrator routing to deterministic, specialized executors</li>
+            <li>Weather-driven power grid risk assessment</li>
+            <li>Power system analysis &amp; operations support</li>
+            <li>Interactive interface with reproducible, content-addressed artifacts</li>
+          </ul>
+          <div class="pill-row">
+            <a class="pub-link" href="https://openreview.net/forum?id=Cs5TBzzNym" target="_blank" rel="noopener">KDD 2026 Workshop paper</a>
+            <a class="pub-link" href="https://dl.acm.org/doi/10.1145/3731599.3767409" target="_blank" rel="noopener">SC25 Workshop paper</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Publications ===== -->
+  <section class="section section-light" id="publications">
+    <div class="container">
+      <div class="reveal">
+        <div class="eyebrow">Research</div>
+        <h2 class="section-title">Publications</h2>
+        <p class="section-lead">Peer-reviewed papers and preprints from the GridAI team. Filter by component.</p>
+      </div>
+
+      <div class="filter-bar reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="lumina">LUMINA</button>
+        <button class="filter-btn" data-filter="gridmind">GridMind</button>
+        <button class="filter-btn" data-filter="bench">LUMINA-Bench</button>
+      </div>
+
+      <div class="pub-list">
+        <!-- 1 -->
+        <article class="pub reveal" data-tags="lumina">
+          <div>
+            <div class="pub-date">Aug 2026</div>
+            <span class="pub-venue">KDD 2026 · AI for Science</span>
+          </div>
+          <div>
+            <h3>Towards Systematic Generalization for Power Grid Optimization Problems</h3>
+            <p>
+              A unified learning framework that jointly solves AC Optimal Power Flow and Security-Constrained
+              Unit Commitment through a shared graph backbone, with physics-informed training and a consensus
+              mechanism for dispatch — achieving strong cross-topology transfer without retraining.
+            </p>
+            <div class="pub-links">
+              <a class="pub-link" href="https://arxiv.org/abs/2605.02026" target="_blank" rel="noopener">arXiv:2605.02026</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2 -->
+        <article class="pub reveal" data-tags="gridmind">
+          <div>
+            <div class="pub-date">Aug 2026</div>
+            <span class="pub-venue">KDD 2026 · Workshop</span>
+          </div>
+          <div>
+            <h3>GridMind: An Agentic Workflow for Weather-Driven Power Grid Risk Assessment</h3>
+            <p>
+              An agentic workflow that couples weather intelligence with power system reasoning to assess
+              grid risk, orchestrating specialized agents for end-to-end risk analysis.
+            </p>
+            <div class="pub-links">
+              <a class="pub-link" href="https://openreview.net/forum?id=Cs5TBzzNym" target="_blank" rel="noopener">OpenReview</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 3 -->
+        <article class="pub reveal" data-tags="lumina">
+          <div>
+            <div class="pub-date">May 2026</div>
+            <span class="pub-venue">ICLR 2026 · Workshop</span>
+          </div>
+          <div>
+            <h3>LUMINA: Foundation Models for Topology Transferable ACOPF</h3>
+            <p>
+              Introduces LUMINA foundation models that learn ACOPF surrogates transferable across grid
+              topologies, enabling a single model to generalize to unseen power networks.
+            </p>
+            <div class="pub-links">
+              <a class="pub-link" href="https://openreview.net/pdf?id=XgkgLDv7tN" target="_blank" rel="noopener">PDF</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 4 -->
+        <article class="pub reveal" data-tags="bench lumina">
+          <div>
+            <div class="pub-date">May 2026</div>
+            <span class="pub-venue">arXiv preprint</span>
+          </div>
+          <div>
+            <h3>LUMINA: A Grid Foundation Model for Benchmarking AC Optimal Power Flow Surrogate Learning</h3>
+            <p>
+              A comprehensive benchmark (to be renamed <strong>LUMINA-Bench</strong>) evaluating homogeneous
+              and heterogeneous neural architectures for ACOPF under single- and multi-topology settings,
+              with unified metrics for accuracy and physics-constraint satisfaction.
+            </p>
+            <div class="pub-links">
+              <a class="pub-link" href="https://arxiv.org/abs/2605.02133" target="_blank" rel="noopener">arXiv:2605.02133</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 5 -->
+        <article class="pub reveal" data-tags="gridmind">
+          <div>
+            <div class="pub-date">Sep 2025</div>
+            <span class="pub-venue">SC25 · Workshop</span>
+          </div>
+          <div>
+            <h3>GridMind: LLMs-Powered Agents for Power System Analysis and Operations</h3>
+            <p>
+              The earlier release of GridMind — LLM-powered agents for power system analysis and operations,
+              establishing the shared agentic framework that continues to evolve.
+            </p>
+            <div class="pub-links">
+              <a class="pub-link" href="https://dl.acm.org/doi/10.1145/3731599.3767409" target="_blank" rel="noopener">ACM DL · 10.1145/3731599.3767409</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Timeline ===== -->
+  <section class="section" id="timeline">
+    <div class="container">
+      <div class="reveal">
+        <div class="eyebrow">Milestones</div>
+        <h2 class="section-title">Project Timeline</h2>
+        <p class="section-lead">Key publications and releases across the GridAI project.</p>
+      </div>
+      <div class="timeline reveal">
+        <div class="tl-item gm">
+          <div class="tl-dot"></div>
+          <div class="tl-date">Sep 2025</div>
+          <div class="tl-title">GridMind v1 — SC25 Workshop</div>
+          <div class="tl-desc">LLMs-powered agents for power system analysis and operations.</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-date">May 2026</div>
+          <div class="tl-title">LUMINA — ICLR 2026 Workshop</div>
+          <div class="tl-desc">Foundation models for topology-transferable ACOPF.</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-date">May 2026</div>
+          <div class="tl-title">LUMINA-Bench — arXiv</div>
+          <div class="tl-desc">Grid foundation model benchmark for ACOPF surrogate learning.</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-date">Aug 2026</div>
+          <div class="tl-title">Systematic Generalization — KDD 2026</div>
+          <div class="tl-desc">Unified graph model for ACOPF + SCUC with cross-topology transfer.</div>
+        </div>
+        <div class="tl-item gm">
+          <div class="tl-dot"></div>
+          <div class="tl-date">Aug 2026</div>
+          <div class="tl-title">GridMind — KDD 2026 Workshop</div>
+          <div class="tl-desc">Agentic workflow for weather-driven power grid risk assessment.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Resources / Packages ===== -->
+  <section class="section section-light" id="resources">
+    <div class="container">
+      <div class="reveal">
+        <div class="eyebrow">Open Source</div>
+        <h2 class="section-title">Packages &amp; Resources</h2>
+        <p class="section-lead">Models, SDKs, and tools released by the GridAI team.</p>
+      </div>
+      <div class="grid-4" style="margin-top:40px;">
+        <a class="pkg reveal" href="https://huggingface.co/argonne/LUMINA-2M" target="_blank" rel="noopener">
+          <div class="pkg-badge">🤗 Model</div>
+          <h3>LUMINA-2M</h3>
+          <p>Pretrained LUMINA foundation model on Hugging Face, updated periodically.</p>
+          <span class="pkg-arrow">Open →</span>
+        </a>
+        <a class="pkg reveal" href="https://argonne-gridfm.github.io/lumina-sdk/" target="_blank" rel="noopener">
+          <div class="pkg-badge">SDK</div>
+          <h3>lumina-sdk</h3>
+          <p>PyTorch + PyG training framework used to build LUMINA models.</p>
+          <span class="pkg-arrow">Docs →</span>
+        </a>
+        <a class="pkg reveal" href="https://github.com/argonne-gridfm/lumina-inference" target="_blank" rel="noopener">
+          <div class="pkg-badge">Inference</div>
+          <h3>lumina-inference</h3>
+          <p>Lightweight, inference-only package to run LUMINA and get results.</p>
+          <span class="pkg-arrow">GitHub →</span>
+        </a>
+        <a class="pkg reveal" href="https://github.com/argonne-gridfm/" target="_blank" rel="noopener">
+          <div class="pkg-badge">Org</div>
+          <h3>argonne-gridfm</h3>
+          <p>All GridAI repositories on GitHub — models, tools, and demos.</p>
+          <span class="pkg-arrow">GitHub →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Team & Acknowledgments ===== -->
+  <section class="section" id="team">
+    <div class="container">
+      <div class="reveal">
+        <div class="eyebrow">Collaboration</div>
+        <h2 class="section-title">Team &amp; Acknowledgments</h2>
+        <p class="section-lead">
+          GridAI is led by Argonne National Laboratory and carried out with a broad network of national
+          laboratories and industry partners.
+        </p>
+      </div>
+
+      <!-- Auto-rolling logo marquees -->
+      <div class="reveal" style="margin-top:8px;">
+        <h4 style="color:var(--muted);font-size:0.8rem;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:6px;">National Laboratories</h4>
+        <div class="marquee" style="--speed:55s;">
+          <div class="marquee-track" data-marquee="labs">
+            <div class="logo-item"><img src="assets/img/logo_anl.png" alt="Argonne National Laboratory" loading="lazy"></div>
+            <div class="logo-item"><img src="assets/img/logo_nlr.jpg" alt="National Laboratory of the Rockies" loading="lazy"></div>
+            <div class="logo-item"><img src="assets/img/logo_ornl.png" alt="Oak Ridge National Laboratory" loading="lazy"></div>
+            <div class="logo-item"><img src="assets/img/logo_lanl.png" alt="Los Alamos National Laboratory" loading="lazy"></div>
+            <div class="logo-item"><img src="assets/img/logo_bnl.png" alt="Brookhaven National Laboratory" loading="lazy"></div>
+            <div class="logo-item"><img src="assets/img/logo_pnnl.png" alt="Pacific Northwest National Laboratory" loading="lazy"></div>
+            <div class="logo-item"><img src="assets/img/logo_snl.png" alt="Sandia National Laboratories" loading="lazy"></div>
+            <div class="logo-item"><img src="assets/img/logo_llnl.png" alt="Lawrence Livermore National Laboratory" loading="lazy"></div>
+          </div>
+        </div>
+
+        <h4 style="color:var(--muted);font-size:0.8rem;text-transform:uppercase;letter-spacing:0.08em;margin:20px 0 6px;">Industry Partners</h4>
+        <div class="marquee reverse" style="--speed:50s;">
+          <div class="marquee-track" data-marquee="industry">
+            <div class="logo-item"><img src="assets/img/logo_google.png" alt="Google" loading="lazy"></div>
+            <div class="logo-item"><img src="assets/img/logo_tva.jpg" alt="Tennessee Valley Authority" loading="lazy"></div>
+            <div class="logo-item"><img src="assets/img/logo_iso_ne.png" alt="ISO New England" loading="lazy"></div>
+            <div class="logo-item"><img src="assets/img/logo_comed.png" alt="ComEd" loading="lazy"></div>
+            <div class="logo-item"><img src="assets/img/logo_aveva.png" alt="Aveva" loading="lazy"></div>
+            <div class="logo-item"><img src="assets/img/logo_epri.png" alt="EPRI" loading="lazy"></div>
+            <div class="logo-item"><img src="assets/img/logo_ercot.png" alt="ERCOT" loading="lazy"></div>
+            <div class="logo-item"><img src="assets/img/logo_ibm.png" alt="IBM" loading="lazy"></div>
+            <div class="logo-item"><img src="assets/img/logo_ge_vernova.jpg" alt="GE Vernova" loading="lazy"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-card reveal">
+        <div>
+          <h3>Get in touch</h3>
+          <p>For questions and collaboration inquiries, contact <strong>Kibaek Kim</strong>, Argonne National Laboratory.</p>
+        </div>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;">
+          <a class="btn btn-primary" href="https://www.anl.gov/profile/kibaek-kim" target="_blank" rel="noopener">ANL Profile</a>
+          <a class="btn btn-ghost" href="https://github.com/argonne-gridfm/" target="_blank" rel="noopener">GitHub Org</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand"><span class="dot" style="width:12px;height:12px;border-radius:50%;background:linear-gradient(135deg,#29ABE2,#7AC943);display:inline-block;"></span> GridAI</div>
+          <p style="max-width:360px;">
+            AI foundation models and agentic workflows for power grid optimization, analysis, and operations.
+            A research project at Argonne National Laboratory.
+          </p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <a href="#lumina">LUMINA</a>
+          <a href="#gridmind">GridMind</a>
+          <a href="#publications">Publications</a>
+          <a href="#resources">Resources</a>
+        </div>
+        <div>
+          <h4>Links</h4>
+          <a href="https://github.com/argonne-gridfm/" target="_blank" rel="noopener">GitHub Organization</a>
+          <a href="https://huggingface.co/argonne/LUMINA-2M" target="_blank" rel="noopener">Hugging Face</a>
+          <a href="https://argonne-gridfm.github.io/lumina-sdk/" target="_blank" rel="noopener">lumina-sdk Docs</a>
+          <a href="https://www.anl.gov/" target="_blank" rel="noopener">Argonne National Laboratory</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year">2026</span> GridAI · Argonne National Laboratory. Supported by LDRD and the ModCon Genesis Mission.</span>
+        <span>Built for research &amp; educational purposes.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
