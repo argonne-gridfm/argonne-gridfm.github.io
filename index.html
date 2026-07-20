@@ -148,46 +148,11 @@
           </div>
         </div>
         <div class="split-media reveal">
-          <div class="media-panel">
-            <div class="mp-title">Model schematic · HGT backbone</div>
-            <!-- Placeholder schematic (swap for real architecture figure) -->
-            <svg class="schematic" viewBox="0 0 420 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="LUMINA heterogeneous graph model schematic">
-              <defs>
-                <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
-                  <stop offset="0" stop-color="#29ABE2"/><stop offset="1" stop-color="#7AC943"/>
-                </linearGradient>
-              </defs>
-              <!-- input graph -->
-              <text x="12" y="20" fill="#8fb8d8" font-size="11" font-family="Inter">Power grid graph</text>
-              <g stroke="#3f6f9e" stroke-width="1.4">
-                <line x1="45" y1="70" x2="95" y2="45"/><line x1="45" y1="70" x2="90" y2="110"/>
-                <line x1="95" y1="45" x2="120" y2="95"/><line x1="90" y1="110" x2="120" y2="95"/>
-                <line x1="90" y1="110" x2="60" y2="150"/>
-              </g>
-              <g fill="#29ABE2">
-                <circle cx="45" cy="70" r="7"/><circle cx="95" cy="45" r="7"/>
-                <circle cx="120" cy="95" r="7"/><circle cx="90" cy="110" r="7"/>
-                <circle cx="60" cy="150" r="7" fill="#7AC943"/>
-              </g>
-              <!-- arrow -->
-              <line x1="150" y1="100" x2="200" y2="100" stroke="#8fb8d8" stroke-width="1.6" marker-end="url(#a)"/>
-              <defs><marker id="a" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
-                <path d="M0,0 L6,3 L0,6 Z" fill="#8fb8d8"/></marker></defs>
-              <!-- transformer stack -->
-              <text x="210" y="42" fill="#8fb8d8" font-size="11" font-family="Inter">HGT layers</text>
-              <rect x="210" y="52" width="120" height="26" rx="6" fill="url(#g1)" opacity="0.9"/>
-              <rect x="210" y="86" width="120" height="26" rx="6" fill="url(#g1)" opacity="0.7"/>
-              <rect x="210" y="120" width="120" height="26" rx="6" fill="url(#g1)" opacity="0.55"/>
-              <text x="270" y="70" fill="#06263f" font-size="10" font-family="Inter" text-anchor="middle" font-weight="700">Attention</text>
-              <text x="270" y="104" fill="#06263f" font-size="10" font-family="Inter" text-anchor="middle" font-weight="700">Message pass</text>
-              <text x="270" y="138" fill="#06263f" font-size="10" font-family="Inter" text-anchor="middle" font-weight="700">Task heads</text>
-              <!-- outputs -->
-              <line x1="335" y1="130" x2="370" y2="180" stroke="#8fb8d8" stroke-width="1.4"/>
-              <text x="250" y="200" fill="#8fb8d8" font-size="11" font-family="Inter">Outputs</text>
-              <rect x="250" y="210" width="150" height="24" rx="6" fill="#123b6b" stroke="#29ABE2"/>
-              <text x="325" y="226" fill="#cfe8fa" font-size="10" font-family="Inter" text-anchor="middle">V, θ, P, Q · feasibility</text>
-              <text x="20" y="260" fill="#5f83a5" font-size="10" font-family="Inter">Placeholder — replace with LUMINA architecture figure</text>
-            </svg>
+          <div class="media-panel media-panel-light">
+            <div class="mp-title">LUMINA architecture</div>
+            <img class="arch-img" src="assets/img/lumina-arch.png"
+                 alt="LUMINA architecture: parallel edge and node graph transformers (Q/K/V attention, Add &amp; Norm, Scale, Softmax, Matmul) producing edge and node embeddings that combine into the prediction." loading="lazy" />
+            <p class="mp-caption">Parallel edge- and node-oriented transformers produce heterogeneous embeddings (Bus / Gen / Load / Shunt, AC-Line / Transformer) that are fused for prediction.</p>
           </div>
         </div>
       </div>
@@ -199,14 +164,16 @@
     <div class="container">
       <div class="split rev">
         <div class="split-media reveal">
-          <a href="https://anl.box.com/s/3ejd4w0dqnvwu8j2euqb36el9rw8gjbl" target="_blank" rel="noopener" style="text-decoration:none;">
-            <div class="video-thumb">
-              <div class="play-btn" aria-hidden="true"></div>
-              <span class="video-caption">▶ Watch the GridMind demo</span>
-            </div>
-          </a>
+          <div class="video-wrap">
+            <video class="demo-video" controls controlsList="nodownload noremoteplayback"
+                   disablePictureInPicture preload="metadata" playsinline
+                   oncontextmenu="return false;" aria-label="GridMind demo video">
+              <source src="assets/video/gridmind_demo.mp4" type="video/mp4" />
+              Your browser does not support embedded video.
+            </video>
+          </div>
           <p style="text-align:center;color:var(--muted);font-size:0.88rem;margin-top:12px;">
-            Demo video hosted on Box · opens in a new tab
+            GridMind demo &mdash; agentic workflow in action
           </p>
         </div>
         <div class="split-text reveal">

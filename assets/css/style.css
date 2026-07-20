@@ -150,20 +150,19 @@ a:hover { text-decoration: underline; }
 .media-panel .mp-title { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--teal); margin-bottom: 18px; }
 .schematic { width: 100%; height: auto; display: block; }
 
-/* video card */
-.video-thumb {
-  position: relative; aspect-ratio: 16/9; border-radius: 16px; overflow: hidden;
-  background: linear-gradient(135deg, #0f2c50, #1c5a86);
-  display: flex; align-items: center; justify-content: center; border: 1px solid var(--border);
+/* Light media panel for the LUMINA architecture figure (white-background PNG) */
+.media-panel-light { background: #fff; border: 1px solid var(--border); color: var(--ink); }
+.media-panel-light .mp-title { color: var(--teal-dark); text-align: center; }
+.arch-img { width: 100%; height: auto; display: block; border-radius: 10px; }
+.mp-caption { font-size: 0.86rem; color: var(--muted); margin: 16px 0 0; line-height: 1.5; }
+
+/* Local video player */
+.video-wrap {
+  position: relative; border-radius: 16px; overflow: hidden;
+  border: 1px solid var(--border); background: #000;
+  box-shadow: 0 24px 60px rgba(11,35,64,0.22);
 }
-.play-btn {
-  width: 74px; height: 74px; border-radius: 50%; background: rgba(255,255,255,0.92);
-  display: flex; align-items: center; justify-content: center; transition: transform 0.2s, background 0.2s;
-}
-.video-thumb:hover .play-btn { transform: scale(1.08); background: #fff; }
-.play-btn::after { content: ""; margin-left: 5px; border-style: solid; border-width: 13px 0 13px 22px;
-  border-color: transparent transparent transparent var(--navy); }
-.video-caption { position: absolute; left: 18px; bottom: 16px; color: #fff; font-weight: 600; z-index: 2; text-shadow: 0 2px 8px rgba(0,0,0,0.5); }
+.demo-video { display: block; width: 100%; height: auto; aspect-ratio: 16/9; background: #000; }
 
 /* ===== Publications ===== */
 .filter-bar { display: flex; flex-wrap: wrap; gap: 10px; margin: 28px 0 32px; }
