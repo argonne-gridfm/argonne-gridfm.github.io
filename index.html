@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>GridAI — AI Foundation Models &amp; Agents for the Power Grid</title>
-  <meta name="description" content="GridAI is an Argonne National Laboratory research project building AI foundation models (LUMINA) and agentic workflows (GridMind) for power grid optimization, analysis, and operations." />
+  <meta name="description" content="GridAI is an Argonne National Laboratory research project building scalable AI foundation models (LUMINA) and agentic workflows (GridMind) for power grid optimization, analysis, and operations." />
   <meta name="author" content="Argonne National Laboratory — GridAI" />
   <!-- Open Graph -->
   <meta property="og:title" content="GridAI — AI for the Power Grid" />
@@ -27,7 +27,6 @@
         <a href="#lumina">LUMINA</a>
         <a href="#gridmind">GridMind</a>
         <a href="#publications">Publications</a>
-        <a href="#timeline">Timeline</a>
         <a href="#resources">Resources</a>
         <a href="#team">Team</a>
         <a href="https://github.com/argonne-gridfm/" target="_blank" rel="noopener" class="nav-cta">GitHub</a>
@@ -345,48 +344,7 @@
     </div>
   </section>
 
-  <!-- ===== Timeline ===== -->
-  <section class="section" id="timeline">
-    <div class="container">
-      <div class="reveal">
-        <div class="eyebrow">Milestones</div>
-        <h2 class="section-title">Project Timeline</h2>
-        <p class="section-lead">Key publications and releases across the GridAI project.</p>
-      </div>
-      <div class="timeline reveal">
-        <div class="tl-item gm">
-          <div class="tl-dot"></div>
-          <div class="tl-date">Sep 2025</div>
-          <div class="tl-title">GridMind v1 — SC25 Workshop</div>
-          <div class="tl-desc">LLMs-powered agents for power system analysis and operations.</div>
-        </div>
-        <div class="tl-item">
-          <div class="tl-dot"></div>
-          <div class="tl-date">May 2026</div>
-          <div class="tl-title">LUMINA — ICLR 2026 Workshop</div>
-          <div class="tl-desc">Foundation models for topology-transferable ACOPF.</div>
-        </div>
-        <div class="tl-item">
-          <div class="tl-dot"></div>
-          <div class="tl-date">May 2026</div>
-          <div class="tl-title">LUMINA-Bench — arXiv</div>
-          <div class="tl-desc">Grid foundation model benchmark for ACOPF surrogate learning.</div>
-        </div>
-        <div class="tl-item">
-          <div class="tl-dot"></div>
-          <div class="tl-date">Aug 2026</div>
-          <div class="tl-title">Systematic Generalization — KDD 2026</div>
-          <div class="tl-desc">Unified graph model for ACOPF + SCUC with cross-topology transfer.</div>
-        </div>
-        <div class="tl-item gm">
-          <div class="tl-dot"></div>
-          <div class="tl-date">Aug 2026</div>
-          <div class="tl-title">GridMind — KDD 2026 Workshop</div>
-          <div class="tl-desc">Agentic workflow for weather-driven power grid risk assessment.</div>
-        </div>
-      </div>
-    </div>
-  </section>
+  <!-- ===== Timeline (disabled — duplicates Publications) ===== -->
 
   <!-- ===== Resources / Packages ===== -->
   <section class="section section-light" id="resources">
@@ -433,38 +391,50 @@
         <h2 class="section-title">Team &amp; Acknowledgments</h2>
         <p class="section-lead">
           GridAI is led by Argonne National Laboratory and carried out with a broad network of national
-          laboratories and industry partners.
+          laboratories, universities, and industry partners.
         </p>
       </div>
 
       <!-- Auto-rolling logo marquees -->
       <div class="reveal" style="margin-top:8px;">
-        <h4 style="color:var(--muted);font-size:0.8rem;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:6px;">National Laboratories</h4>
-        <div class="marquee" style="--speed:55s;">
+        <h4 style="color:var(--muted);font-size:0.8rem;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:6px;">National Laboratories &amp; Universities</h4>
+        <div class="marquee" style="--speed:60s;">
           <div class="marquee-track" data-marquee="labs">
             <div class="logo-item"><img src="assets/img/logo_anl.png" alt="Argonne National Laboratory" loading="lazy"></div>
+            <div class="logo-item"><img src="assets/img/logo_lanl.png" alt="Los Alamos National Laboratory" loading="lazy"></div>
             <div class="logo-item"><img src="assets/img/logo_nlr.jpg" alt="National Laboratory of the Rockies" loading="lazy"></div>
             <div class="logo-item"><img src="assets/img/logo_ornl.png" alt="Oak Ridge National Laboratory" loading="lazy"></div>
-            <div class="logo-item"><img src="assets/img/logo_lanl.png" alt="Los Alamos National Laboratory" loading="lazy"></div>
-            <div class="logo-item"><img src="assets/img/logo_bnl.png" alt="Brookhaven National Laboratory" loading="lazy"></div>
             <div class="logo-item"><img src="assets/img/logo_pnnl.png" alt="Pacific Northwest National Laboratory" loading="lazy"></div>
+            <div class="logo-item"><img src="assets/img/logo_bnl.png" alt="Brookhaven National Laboratory" loading="lazy"></div>
             <div class="logo-item"><img src="assets/img/logo_snl.png" alt="Sandia National Laboratories" loading="lazy"></div>
             <div class="logo-item"><img src="assets/img/logo_llnl.png" alt="Lawrence Livermore National Laboratory" loading="lazy"></div>
+            <div class="logo-item"><img src="assets/img/logo_epri.png" alt="EPRI" loading="lazy"></div>
+            <div class="logo-item"><img src="assets/img/logo_emory.png" alt="Emory University" loading="lazy"></div>
+            <div class="logo-item"><img src="assets/img/logo_mit.svg" alt="Massachusetts Institute of Technology" loading="lazy"></div>
+            <div class="logo-item"><img src="assets/img/logo_harvard.png" alt="Harvard University" loading="lazy"></div>
           </div>
         </div>
 
         <h4 style="color:var(--muted);font-size:0.8rem;text-transform:uppercase;letter-spacing:0.08em;margin:20px 0 6px;">Industry Partners</h4>
-        <div class="marquee reverse" style="--speed:50s;">
+        <div class="marquee reverse" style="--speed:60s;">
           <div class="marquee-track" data-marquee="industry">
             <div class="logo-item"><img src="assets/img/logo_google.png" alt="Google" loading="lazy"></div>
-            <div class="logo-item"><img src="assets/img/logo_tva.jpg" alt="Tennessee Valley Authority" loading="lazy"></div>
-            <div class="logo-item"><img src="assets/img/logo_iso_ne.png" alt="ISO New England" loading="lazy"></div>
-            <div class="logo-item"><img src="assets/img/logo_comed.png" alt="ComEd" loading="lazy"></div>
-            <div class="logo-item"><img src="assets/img/logo_aveva.png" alt="Aveva" loading="lazy"></div>
-            <div class="logo-item"><img src="assets/img/logo_epri.png" alt="EPRI" loading="lazy"></div>
-            <div class="logo-item"><img src="assets/img/logo_ercot.png" alt="ERCOT" loading="lazy"></div>
+            <div class="logo-item"><img src="assets/img/logo_aws.svg" alt="Amazon Web Services" loading="lazy"></div>
+            <div class="logo-item"><img src="assets/img/logo_nvidia.svg" alt="NVIDIA" loading="lazy"></div>
+            <div class="logo-item"><img src="assets/img/logo_amd.svg" alt="AMD" loading="lazy"></div>
             <div class="logo-item"><img src="assets/img/logo_ibm.png" alt="IBM" loading="lazy"></div>
+            <div class="logo-item"><img src="assets/img/logo_siemens_energy.svg" alt="Siemens Energy" loading="lazy"></div>
             <div class="logo-item"><img src="assets/img/logo_ge_vernova.jpg" alt="GE Vernova" loading="lazy"></div>
+            <div class="logo-item"><img src="assets/img/logo_aveva.png" alt="Aveva" loading="lazy"></div>
+            <div class="logo-item"><img src="assets/img/logo_tva.jpg" alt="Tennessee Valley Authority" loading="lazy"></div>
+            <div class="logo-item"><img src="assets/img/logo_bpa.svg" alt="Bonneville Power Administration" loading="lazy"></div>
+            <div class="logo-item"><img src="assets/img/logo_aep.svg" alt="American Electric Power" loading="lazy"></div>
+            <div class="logo-item"><img src="assets/img/logo_southern.svg" alt="Southern Company" loading="lazy"></div>
+            <div class="logo-item"><img src="assets/img/logo_exelon.svg" alt="Exelon" loading="lazy"></div>
+            <div class="logo-item"><img src="assets/img/logo_comed.png" alt="ComEd" loading="lazy"></div>
+            <div class="logo-item"><img src="assets/img/logo_ercot.png" alt="Electric Reliability Council of Texas (ERCOT)" loading="lazy"></div>
+            <div class="logo-item"><img src="assets/img/logo_iso_ne.png" alt="ISO New England" loading="lazy"></div>
+            <div class="logo-item"><img src="assets/img/logo_nreca.png" alt="NRECA" loading="lazy"></div>
           </div>
         </div>
       </div>
@@ -472,11 +442,7 @@
       <div class="contact-card reveal">
         <div>
           <h3>Get in touch</h3>
-          <p>For questions and collaboration inquiries, contact <strong>Kibaek Kim</strong>, Argonne National Laboratory.</p>
-        </div>
-        <div style="display:flex;gap:12px;flex-wrap:wrap;">
-          <a class="btn btn-primary" href="https://www.anl.gov/profile/kibaek-kim" target="_blank" rel="noopener">ANL Profile</a>
-          <a class="btn btn-ghost" href="https://github.com/argonne-gridfm/" target="_blank" rel="noopener">GitHub Org</a>
+          <p>For questions and collaboration inquiries, contact <strong>Kibaek Kim</strong>, Argonne National Laboratory &mdash; <a href="mailto:kimk@anl.gov" style="color:#fff;text-decoration:underline;">kimk@anl.gov</a></p>
         </div>
       </div>
     </div>
